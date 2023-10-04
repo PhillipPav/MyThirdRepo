@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phillip Pavlides</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body id="home">
+        <ul class="nav" id="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+
+        <div id="app">
+        <div v-on:click="toggleTitle" class="title">
+            <h1 v-if="showTitle">Hi! <br>I'm Phillip.</h1>
+            <h1 v-else>I like to <br>build games! </h1>
+            <img id="arrow" src="images/down-arrow.png" alt="down-arrow">
+        </div>
+    </div>
+        <div class="flex-container" id="about">
+            <img class="portrait" src="images/portrait.jpeg" alt="Portrait">
+            <div class="about">
+                <h3>ABOUT ME</h3>   
+                <p> I began my studies at the University of Tasmania studying a Bachelor of Information and Communication Technology majoring in Games and Creative Technology. I have since transferred and continue my ICT studies at Deakin University majoring in Application Development.
+                    My studies in ICT have allowed me to further develop my skills in software development, game design. I am keen to become part of a team in the ICT industry and am working towards building a diversified project portfolio to show my curiosity and abilities in ICT. </p>
+            </div>
+        </div>
+        <div id="projects"> 
+            <h1> Projects</h1>
+        </div>
+        <table class="projects">
+            <tr>
+                <td class="project-info"> In The Lonesome Fisherman, you play as a fisherman wandering through a mysterious web of seemingly never-ending caves 
+                    fighting off enemies and fishing in the mysterious lakes to gain handsome rewards. Use your trusty fishing rod to protect yourself from hoards of enemies while dashing 
+                    around at high speeds to avoid getting hit at all costs! <br> <br>  <a href="https://phillippav.itch.io/the-lonseome-fisherman">Itch.io</a>
+                    
+                </td>
+                <td> <a href="https://phillippav.itch.io/the-lonseome-fisherman"><img src="images/project-1.png" alt="Project 1"></a></td>
+            </tr>
+            <tr>
+                <td> <a href="https://phillippav.itch.io/kit109pong"><img src="images/project-2.png" alt="Project 2"></a></td>
+                <td class="project-info"> A fresh and exciting new take on the classic game of Pong! Play for glory against your friends locally in the 2-player mode!
+                    Take on the AI for a fun challenge in the 1-player mode. Or dare to face against the IMPOSSIBLE MODE AI where your skills, and patience,
+                    will truly be put to the test! Just be sure to prepare yourself for some trash-talk and sneaky moves! Enjoy it all with a fully functional
+                    soundtrack and audio visualiser system featuring 12 high energy tracks. <br> <br> <a href="https://phillippav.itch.io/kit109pong">Itch.io</a>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="project-info"> A retro-style 2D puzzle platformer, where the player is challenged to reach the end portal
+                    using only the limited amount of direction inputs given. Featuring a variety of levels displaying unique and interesting designs
+                    and mechanics. Play on three difficulty settings and test your skills by attempting to complete the levels as fast as possible!
+                    <br> <br> <a href="https://phillippav.itch.io/exam-game">Itch.io</a> </td>
+                <td><a href="https://phillippav.itch.io/exam-game"><img src="images/project-3.png" alt="Project 3"></a></td>
+            </tr>
+        </table>
+        <div class="flex-container">
+            <img class="headshot" src="images/headshot.jpg" alt="Headshot">
+            <div class="about">
+                <h3>This website was made entirely by me.</h3>
+                <p> This portfolio was created using HTML, CSS and Vue.js; and was done so purely for pedagogical reasons. This task was submitted to Deakin University's SIT120,
+                     Introduction to Responsive Web Apps, as part of Task 1.3P.
+                </p>
+                <h3>Phillip Pavlides (223256565) </h3>
+            </div>
+        </div>
+        <script defer src="app.js"></script>
+    </body>
+</html>
